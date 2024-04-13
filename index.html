@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section id="navigation">
+        <div class="nav-bar">
+            <div id="logo">
+                <a><img src="./logo.png" width="100" alt="logo" style="filter: brightness(1.2);"></a>
+            </div>
+            <div id="items">
+                <div><a href="#">Home</a></div>
+                <div><a href="./graph.html" target="_blank">Airports</a></div>
+                <div><a href="#">Contacts</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="central">
+        <div class="main-div">
+            <div class="top">
+                <div style="display: flex; justify-content: space-between;">
+                    <input type="radio" id="one-way" name="flight-type" value="one">
+                    <label for="one-way">One Way</label>
+                    <input type="radio" id="two-way" name="flight-type" value="round">
+                    <label for="two-way">Round Trip</label>
+                </div>
+    
+                <div>
+                    <input type="radio" id="byDistance" name="optimize-type" value="one">
+                    <label for="one-way">Shortest Distance</label>
+                    <input type="radio" id="byPrice" name="optimize-type" value="round">
+                    <label for="two-way">Cheapest Price</label>
+                </div>
+            </div>
+      
+            <div class="middle">
+                <div id="from">
+                    <div><h2>FROM</h2></div>
+                    <select class="select-wrapper src">
+                        <option disabled selected>Select Source</option>
+                        <option value="0">Bhubaneswar Airport (Biju Patnaik International Airport)</option>
+                        <option value="1">New Delhi Airport (Indira Gandhi International Airport)</option>
+                        <option value="2">Hyderabad Airport (Rajiv Gandhi International Airport)</option>
+                        <option value="3">Vijayawada Airport</option>
+                        <option value="4">Thiruvananthapuram Airport (Trivandrum International Airport)</option>
+                        <option value="5">Goa Airport (Dabolim Airport)</option>
+                        <option value="6">Ahmedabad Airport (Sardar Vallabhbhai Patel International Airport)</option>
+                        <option value="7">Indore Airport (Devi Ahilya Bai Holkar Airport)</option>
+                        <option value="8">Lucknow Airport (Chaudhary Charan Singh International Airport)</option>
+                        <option value="9">Bagdogra Airport (Bagdogra International Airport)</option>
+                        <option value="10">Imphal Airport (Bir Tikendrajit International Airport)</option>
+                        <option value="1">Srinagar Airport (Sheikh ul-Alam International Airport)</option>
+                    </select>
+                </div>
+                <div id="to">
+                    <div><h2>TO</h2></div>
+                    <select class="select-wrapper dest">
+                        <option disabled selected>Select Destination</option>
+                        <option value="0">Bhubaneswar Airport (Biju Patnaik International Airport)</option>
+                        <option value="1">New Delhi Airport (Indira Gandhi International Airport)</option>
+                        <option value="2">Hyderabad Airport (Rajiv Gandhi International Airport)</option>
+                        <option value="3">Vijayawada Airport</option>
+                        <option value="4">Thiruvananthapuram Airport (Trivandrum International Airport)</option>
+                        <option value="5">Goa Airport (Dabolim Airport)</option>
+                        <option value="6">Ahmedabad Airport (Sardar Vallabhbhai Patel International Airport)</option>
+                        <option value="7">Indore Airport (Devi Ahilya Bai Holkar Airport)</option>
+                        <option value="8">Lucknow Airport (Chaudhary Charan Singh International Airport)</option>
+                        <option value="9">Bagdogra Airport (Bagdogra International Airport)</option>
+                        <option value="10">Imphal Airport (Bir Tikendrajit International Airport)</option>
+                        <option value="11">Srinagar Airport (Sheikh ul-Alam International Airport)</option>
+                    </select>
+                </div>
+                <div class="departure">
+                    <div><h2>DEPARTURE</h2></div>
+                    <input type="date" id="departure-date">
+                </div>
+                
+                <div class="people">
+                    <div><h2>TRAVELLERS</h2></div>
+                    <input type="number" id="number" min="1">
+                </div>
+            </div>
+    
+            <div class="bottom">
+                <label>Select Fare Type:</label>
+                <div>
+                    <input type="radio" id="regular" name="fare-type" value="one">
+                    <label for="regular">Regular Fares</label>
+                </div>
+                <div>
+                    <input type="radio" id="army" name="fare-type" value="one">
+                    <label for="army">Armed Forces Fares</label>
+                </div>
+                <div>
+                    <input type="radio" id="student" name="fare-type" value="one">
+                    <label for="student">Student Fares</label>
+                </div>
+                <div>
+                    <input type="radio" id="senior" name="fare-type" value="one">
+                    <label for="senior">Senior Citizen Fares</label>
+                </div>
+                <div>
+                    <input type="radio" id="medicalstaff" name="fare-type" value="one">
+                    <label for="medicalstaff">Doctor & Nurse Fares</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="search">
+            <button>Search</button>
+        </div>
+        <div class="reset">
+            <button onclick="location.reload()">Reset</button>
+        </div>        
+    </section>
+
+    <footer style="padding-top: 40px; color: antiquewhite;">© HAWK-wing Travel <script>document.write(new Date().getFullYear())</script></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

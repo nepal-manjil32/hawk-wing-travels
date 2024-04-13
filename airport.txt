@@ -1,0 +1,16 @@
+0-BBI: (Biju Patnaik International Airport)
+1-DEL: (Indira Gandhi International Airport)
+2-HYD: (Rajiv Gandhi International Airport)
+3-VGA: (Vijayawada Airport)
+4-TRV: (Trivandrum International Airport)
+5-GOI: (Dabolim Airport, Goa)
+6-AMD: (Sardar Vallabhbhai Patel International Airport, Ahmedabad)
+7-IDR: (Devi Ahilya Bai Holkar Airport, Indore)
+8-LKO: (Chaudhary Charan Singh International Airport, Lucknow)
+9-IXB: (Bagdogra International Airport, Bagdogra)
+10-IMF: (Bir Tikendrajit International Airport, Imphal)
+11-SXR: (Sheikh ul-Alam International Airport, Srinagar)
+
+
+Nodes: 12
+Edges: 15
