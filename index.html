@@ -35,10 +35,10 @@
                 </div>
     
                 <div>
-                    <input type="radio" id="byDistance" name="optimize-type" value="one">
-                    <label for="one-way">Shortest Distance</label>
-                    <input type="radio" id="byPrice" name="optimize-type" value="round">
-                    <label for="two-way">Cheapest Price</label>
+                    <input type="radio" id="byDistance" name="optimize-type">
+                    <label for="byDistance">Shortest Distance</label>
+                    <input type="radio" id="byPrice" name="optimize-type">
+                    <label for="byPrice">Cheapest Price</label>
                 </div>
             </div>
       
@@ -81,7 +81,9 @@
                 </div>
                 <div class="departure">
                     <div><h2>DEPARTURE</h2></div>
-                    <input type="date" id="departure-date">
+                    <!-- <input type="date" id="departure-date"> -->
+                    <input type="date" id="departure-date" min="2024-04-14">
+
                 </div>
                 
                 <div class="people">
