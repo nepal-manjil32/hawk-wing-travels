@@ -8,7 +8,7 @@ document.querySelector(".search button").addEventListener("click", function()
         || document.getElementById('medicalstaff').checked)
     )
     {
-        alert("Please select all the fields!");
+        alert("Please select all the fields!")
     }
     //! Dijkstra Algorithm
     let V = 12;
