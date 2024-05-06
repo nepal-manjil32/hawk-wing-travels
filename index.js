@@ -13,7 +13,7 @@ document.querySelector(".search button").addEventListener("click", function()
     //! Dijkstra Algorithm
     let V = 12;
 
-    function minDistance(distance, isVisited) 
+    function minDistance(distance, isVisited)
     {
         // Initialize min value
         let min = Number.MAX_VALUE;
