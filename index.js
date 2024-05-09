@@ -1,5 +1,17 @@
 document.querySelector(".search button").addEventListener("click", function()
 {
+    //! Disable Previous Dates
+    // const today = new Date();
+
+    // // Format the date as YYYY-MM-DD
+    // const year = today.getFullYear();
+    // const month = String(today.getMonth() + 1).padStart(2, '0'); // Adding 1 because January is 0!
+    // const day = String(today.getDate()).padStart(2, '0');
+
+    // // Set the min attribute of the input field
+    // document.getElementById('departure-date').min = `${year}-${month}-${day}`;
+
+    //! Ensure all fields are checked
     if(
         !(document.getElementById('two-way').checked || document.getElementById('one-way').checked) && 
         !(document.getElementById('byDistance').checked || document.getElementById('byPrice').checked) &&
@@ -8,12 +20,12 @@ document.querySelector(".search button").addEventListener("click", function()
         || document.getElementById('medicalstaff').checked)
     )
     {
-        alert("Please select all the fields!")
+        alert("Please select all the fields!");
     }
     //! Dijkstra Algorithm
     let V = 12;
 
-    function minDistance(distance, isVisited)
+    function minDistance(distance, isVisited) 
     {
         // Initialize min value
         let min = Number.MAX_VALUE;
